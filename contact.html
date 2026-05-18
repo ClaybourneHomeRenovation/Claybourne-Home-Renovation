@@ -335,6 +335,56 @@ textarea:focus{
     font-size:14px;
 }
 
+.prep-section{
+    padding:82px 7.5%;
+    background:#f8f3ec;
+}
+
+.prep-title{
+    max-width:760px;
+    text-align:center;
+    margin:0 auto 52px;
+}
+
+.prep-title h2{
+    font-family:"Cormorant Garamond", serif;
+    font-size:52px;
+    line-height:1.02;
+    font-weight:500;
+    margin-bottom:16px;
+}
+
+.prep-title p{
+    color:var(--muted);
+    line-height:1.85;
+}
+
+.prep-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:26px;
+}
+
+.prep-card{
+    background:#fffaf4;
+    border:1px solid var(--line);
+    border-radius:6px;
+    padding:32px;
+}
+
+.prep-card h3{
+    font-family:"Cormorant Garamond", serif;
+    font-size:34px;
+    font-weight:500;
+    margin-bottom:12px;
+}
+
+.prep-card p{
+    color:#62584f;
+    line-height:1.8;
+    font-size:14px;
+}
+
 .final-cta{
     padding:34px 7.5%;
     background:#eaded2;
@@ -383,6 +433,10 @@ textarea:focus{
         grid-template-columns:1fr;
     }
 
+    .prep-grid{
+        grid-template-columns:1fr;
+    }
+
 }
 
 @media(max-width:700px){
@@ -410,8 +464,23 @@ textarea:focus{
         grid-template-columns:1fr;
     }
 
+    .contact-info,
+    .form-wrapper{
+        min-width:0;
+        padding:30px 24px;
+        overflow-wrap:anywhere;
+    }
+
+    input,
+    select,
+    textarea{
+        min-width:0;
+        width:100%;
+    }
+
     .contact-info h2,
-    .form-wrapper h2{
+    .form-wrapper h2,
+    .prep-title h2{
         font-size:42px;
     }
 
@@ -491,6 +560,12 @@ textarea:focus{
     .mobile-nav{top:92px;padding-left:6%;padding-right:6%;}
 }
 
+
+@media(max-width:700px){
+    .logo{font-size:36px;letter-spacing:4px;}
+    .logo span{letter-spacing:2.5px;}
+}
+
 </style>
 </head>
 
@@ -509,6 +584,8 @@ textarea:focus{
         <a href="pricing.html">Pricing</a>
         <a href="about.html">About Us</a>
         <a href="resources.html">Resources</a>
+<a href="blog.html">Blog</a>
+<a href="faq.html">FAQ</a>
 <a class="active" href="contact.html">Contact</a>
     </nav>
 
@@ -529,6 +606,8 @@ textarea:focus{
         <a href="pricing.html">Pricing</a>
         <a href="about.html">About Us</a>
         <a href="resources.html">Resources</a>
+<a href="blog.html">Blog</a>
+<a href="faq.html">FAQ</a>
 <a class="active" href="contact.html">Contact</a>
     </nav>
 
@@ -742,6 +821,49 @@ textarea:focus{
 
         </div>
 
+    </div>
+
+</section>
+
+<section class="prep-section">
+
+    <div class="prep-title">
+        <div class="eyebrow">Before You Reach Out</div>
+        <h2>A little preparation makes the first conversation more useful.</h2>
+        <p>
+            You do not need a finished design or every answer before contacting
+            Claybourne. A few notes about your goals, budget comfort, and
+            concerns help us understand the project faster.
+        </p>
+    </div>
+
+    <div class="prep-grid">
+        <div class="prep-card">
+            <h3>Describe The Space</h3>
+            <p>
+                Tell us which room or area you want to improve, what is not
+                working now, and whether the project is cosmetic, functional,
+                or a larger remodel.
+            </p>
+        </div>
+
+        <div class="prep-card">
+            <h3>Share Your Priorities</h3>
+            <p>
+                Let us know what matters most: budget, timing, durability,
+                storage, layout, resale value, or simply making the home feel
+                better day to day.
+            </p>
+        </div>
+
+        <div class="prep-card">
+            <h3>Mention Any Concerns</h3>
+            <p>
+                If you are worried about cost, disruption, material choices,
+                older-home surprises, or where to begin, bring that up early.
+                Those details help shape a better plan.
+            </p>
+        </div>
     </div>
 
 </section>

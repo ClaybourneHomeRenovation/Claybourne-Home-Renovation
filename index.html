@@ -136,7 +136,7 @@ img{
     grid-template-columns:45% 55%;
     background:
       linear-gradient(90deg, rgba(249,244,237,1) 0%, rgba(249,244,237,.92) 34%, rgba(249,244,237,.12) 55%),
-      url("https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=1800&auto=format&fit=crop") center right/cover no-repeat;
+      url("https://images.pexels.com/photos/14715844/pexels-photo-14715844.jpeg?auto=compress&cs=tinysrgb&w=1800") center right/cover no-repeat;
 }
 
 .hero-copy{
@@ -271,6 +271,56 @@ img{
     margin-bottom:16px;
 }
 
+.info-section{
+    padding:82px 7.5%;
+    background:#f8f3ec;
+}
+
+.section-title{
+    max-width:760px;
+    text-align:center;
+    margin:0 auto 54px;
+}
+
+.section-title h2{
+    font-family:"Cormorant Garamond", serif;
+    font-size:52px;
+    line-height:1.02;
+    font-weight:500;
+    margin-bottom:16px;
+}
+
+.section-title p{
+    color:var(--muted);
+    line-height:1.85;
+}
+
+.info-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:28px;
+}
+
+.info-card{
+    background:#fffaf4;
+    border:1px solid var(--line);
+    border-radius:6px;
+    padding:34px;
+}
+
+.info-card h3{
+    font-family:"Cormorant Garamond", serif;
+    font-size:36px;
+    font-weight:500;
+    margin-bottom:14px;
+}
+
+.info-card p{
+    color:#62584f;
+    line-height:1.8;
+    font-size:14px;
+}
+
 .final-cta{
     padding:34px 7.5%;
     background:#eaded2;
@@ -312,7 +362,7 @@ img{
         grid-template-columns:1fr;
         background:
           linear-gradient(90deg, rgba(249,244,237,.96), rgba(249,244,237,.55)),
-          url("https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=1800&auto=format&fit=crop") center/cover no-repeat;
+          url("https://images.pexels.com/photos/14715844/pexels-photo-14715844.jpeg?auto=compress&cs=tinysrgb&w=1800") center/cover no-repeat;
     }
 
     .value-strip{
@@ -320,6 +370,10 @@ img{
     }
 
     .split-section{
+        grid-template-columns:1fr;
+    }
+
+    .info-grid{
         grid-template-columns:1fr;
     }
 
@@ -357,6 +411,10 @@ img{
     }
 
     .split-copy h2{
+        font-size:42px;
+    }
+
+    .section-title h2{
         font-size:42px;
     }
 
@@ -436,6 +494,12 @@ img{
     .mobile-nav{top:92px;padding-left:6%;padding-right:6%;}
 }
 
+
+@media(max-width:700px){
+    .logo{font-size:36px;letter-spacing:4px;}
+    .logo span{letter-spacing:2.5px;}
+}
+
 </style>
 </head>
 
@@ -454,6 +518,8 @@ img{
         <a href="pricing.html">Pricing</a>
         <a href="about.html">About Us</a>
         <a href="resources.html">Resources</a>
+<a href="blog.html">Blog</a>
+        <a href="faq.html">FAQ</a>
 <a href="contact.html">Contact</a>
     </nav>
 
@@ -474,6 +540,8 @@ img{
         <a href="pricing.html">Pricing</a>
         <a href="about.html">About Us</a>
         <a href="resources.html">Resources</a>
+<a href="blog.html">Blog</a>
+        <a href="faq.html">FAQ</a>
 <a href="contact.html">Contact</a>
     </nav>
 
@@ -556,6 +624,49 @@ img{
             Clear quotes. No surprises.
             Ever.
         </p>
+    </div>
+
+</section>
+
+<section class="info-section">
+
+    <div class="section-title">
+        <div class="eyebrow">How We Help</div>
+        <h2>Renovation guidance before the work begins.</h2>
+        <p>
+            A better renovation experience starts with understanding the home,
+            the budget, and the reason behind the project. Claybourne helps
+            homeowners make practical decisions before tools come out.
+        </p>
+    </div>
+
+    <div class="info-grid">
+        <div class="info-card">
+            <h3>Clarify The Scope</h3>
+            <p>
+                We help separate must-haves from nice-to-haves so the project
+                has a clear direction. That makes pricing, timing, and material
+                decisions easier to understand from the beginning.
+            </p>
+        </div>
+
+        <div class="info-card">
+            <h3>Plan Around Real Life</h3>
+            <p>
+                Renovations happen inside homes people are actively living in.
+                We think about access, disruption, cleanup, daily routines, and
+                how to keep the process as manageable as possible.
+            </p>
+        </div>
+
+        <div class="info-card">
+            <h3>Build With Purpose</h3>
+            <p>
+                The goal is not only a nicer room. It is a space that feels
+                more useful, more comfortable, and better matched to how the
+                homeowner actually lives.
+            </p>
+        </div>
     </div>
 
 </section>
